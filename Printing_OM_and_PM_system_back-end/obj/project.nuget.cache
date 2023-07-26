@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/MAl6jnNPtQcHrIIT3EUkI6gMxebQz+ZvEjS+fAjWDUcpPojEa+FovBf7crFyEzfbsS7uLEtL46a8gv8sOjiFw==",
+  "dgSpecHash": "D4fauvr2WcbICD6IoGSGnumCN1SsRjJmulkxpi2uyk2SaVHOSTz0NJC736XzgbF7JHr2Fxn07N3UDR5Zwl2Ntg==",
   "success": true,
   "projectFilePath": "/Users/szegotibor/Library/CloudStorage/Dropbox/Tanulas/Programing/Printing_order_management_and_production_monitoring_system/Printing_OM_and_PM_system/Printing_OM_and_PM_system_back-end/Printing_OM_and_PM_system_back-end.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,8 @@
     "/Users/szegotibor/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/szegotibor/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/szegotibor/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "/Users/szegotibor/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    "/Users/szegotibor/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "/Users/szegotibor/.nuget/packages/system.reactive/6.0.0/system.reactive.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
