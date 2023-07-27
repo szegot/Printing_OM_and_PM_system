@@ -1,0 +1,17 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = printing_om_and_pm_system_app
+build_property.RootNamespace = printing_om_and_pm_system_app
+build_property.ProjectDir = /Users/szegotibor/Library/CloudStorage/Dropbox/Tanulas/Programing/Printing_order_management_and_production_monitoring_system/Printing_OM_and_PM_system/printing_om_and_pm_system_back-end/printing_om_and_pm_system_app/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/szegotibor/Library/CloudStorage/Dropbox/Tanulas/Programing/Printing_order_management_and_production_monitoring_system/Printing_OM_and_PM_system/printing_om_and_pm_system_back-end/printing_om_and_pm_system_app
+build_property._RazorSourceGeneratorDebug = 

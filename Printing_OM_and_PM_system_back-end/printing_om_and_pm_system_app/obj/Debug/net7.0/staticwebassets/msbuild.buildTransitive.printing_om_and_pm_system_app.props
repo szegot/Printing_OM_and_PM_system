@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/printing_om_and_pm_system_app.props" />
+</Project>
