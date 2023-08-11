@@ -36,7 +36,7 @@
 
         public bool IsAdmin { get; set; } = false;
 
-        public ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }
 

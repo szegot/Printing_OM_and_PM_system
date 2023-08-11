@@ -11,7 +11,7 @@ namespace printing_om_and_pm_system_app.Models
 
         public bool Status { get; set; }
 
-        public ICollection<ProcessService> ProcessServices { get; set; }
+        public virtual ICollection<ProcessService> ProcessServices { get; set; }
     }
 }
 

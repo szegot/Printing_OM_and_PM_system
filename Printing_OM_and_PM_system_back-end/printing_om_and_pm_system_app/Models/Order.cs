@@ -7,7 +7,7 @@ namespace printing_om_and_pm_system_app.Models
         public int Order_ID { get; set; }
 
         public int User_ID { get; set; }
-        public User User { get; set; }
+        public virtual User Users { get; set; }
 
         public int Price { get; set; }
 
@@ -16,7 +16,7 @@ namespace printing_om_and_pm_system_app.Models
 
         public bool Status { get; set; }
 
-        public ICollection<OrderItem> OrderItems { get; set; }
+        public virtual ICollection<OrderItem> OrderItems { get; set; }
     }
 }
 

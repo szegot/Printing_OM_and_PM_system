@@ -13,7 +13,7 @@ namespace printing_om_and_pm_system_app.Models
         public int Price { get; set; }
         public int Inventory { get; set; }
 
-        public ICollection<Service> Services { get; set; }
+        public virtual ICollection<Service> Services { get; set; }
     }
 }
 

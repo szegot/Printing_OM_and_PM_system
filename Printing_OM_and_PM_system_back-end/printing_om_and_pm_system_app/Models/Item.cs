@@ -16,8 +16,8 @@ namespace printing_om_and_pm_system_app.Models
         public int Size { get; set; }
         public bool Status { get; set; }
 
-        public ICollection<OrderItem> OrderItems { get; set; }
-        public ICollection<ItemService> ItemServices { get; set; }
+        public virtual ICollection<OrderItem> OrderItems { get; set; }
+        public virtual ICollection<ItemService> ItemServices { get; set; }
     }
 }
 

@@ -1,32 +1,29 @@
 ﻿<Properties StartupConfiguration="{9382FE0F-59E2-4780-A6A0-3CA62565E5F9}|https">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.printing__om__and__pm__system__app PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Db/ApplicationDbContext.cs">
     <Files>
-      <File FileName="GlobalUsing.cs" />
-      <File FileName="printing_om_and_pm_system_app.csproj" />
-      <File FileName="Program.cs" />
-      <File FileName="Models/User.cs" />
-      <File FileName="appsettings.json" Line="10" Column="101" />
-      <File FileName="Db/ApplicationDbContext.cs" Line="16" Column="2" NotebookId="1" />
+      <File FileName="Db/ApplicationDbContext.cs" Line="39" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="printing_om_and_pm_system_app" expanded="True">
-            <Node name="printing_om_and_pm_system_app" expanded="True">
-              <Node name="Db" expanded="True" />
+            <Node name="printing_om_and_pm_system_app">
+              <Node name="Db" expanded="True">
+                <Node name="ApplicationDbContext.cs" selected="True" />
+              </Node>
+              <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.printing__om__and__pm__system__app PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

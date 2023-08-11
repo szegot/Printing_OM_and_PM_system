@@ -12,7 +12,7 @@ namespace printing_om_and_pm_system_app.Models
         public int Capacity { get; set; }
         public int Status { get; set; }
 
-        public ICollection<Service> Services { get; set; }
+        public virtual ICollection<Service> Services { get; set; }
     }
 }
 
