@@ -7,7 +7,7 @@ The **Printing Order Management and Production Monitoring System** is a comprehe
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies](#technologies)
-- [Installation](#installation)
+<!-- - [Installation](#installation) -->
 - [Usage](#usage)
 - [License](#license)
 
@@ -33,7 +33,7 @@ The system is built using the following technologies:
 - **Database:** Choose an appropriate database system (e.g., SQL Server, PostgreSQL, MySQL)
 - **Authentication:** JWT (JSON Web Tokens)
 
-<--! ## Installation
+<!-- ## Installation
 
 Follow these steps to set up the system:
 
