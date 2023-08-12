@@ -6,7 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
@@ -22,6 +21,8 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.9" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +35,8 @@
     <None Remove="Profiles\" />
     <None Remove="Repositories\" />
     <None Remove="Static\" />
+    <None Remove="DTO\Outgoing\" />
+    <None Remove="DTO\Incoming\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -45,5 +48,7 @@
     <Folder Include="Profiles\" />
     <Folder Include="Repositories\" />
     <Folder Include="Static\" />
+    <Folder Include="DTO\Outgoing\" />
+    <Folder Include="DTO\Incoming\" />
   </ItemGroup>
 </Project>
