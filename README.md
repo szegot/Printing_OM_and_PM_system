@@ -30,7 +30,7 @@ The system is built using the following technologies:
 
 - **Front-end:** Next.js
 - **Back-end:** ASP.NET
-- **Database:** Choose an appropriate database system (e.g., SQL Server, PostgreSQL, MySQL)
+- **Database:** MySQL
 - **Authentication:** JWT (JSON Web Tokens)
 
 <!-- ## Installation
