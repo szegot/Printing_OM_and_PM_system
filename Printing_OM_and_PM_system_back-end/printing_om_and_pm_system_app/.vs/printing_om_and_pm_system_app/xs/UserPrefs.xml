@@ -1,22 +1,30 @@
 ﻿<Properties StartupConfiguration="{9382FE0F-59E2-4780-A6A0-3CA62565E5F9}|http">
-  <MonoDevelop.Ide.ItemProperties.printing__om__and__pm__system__app PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/UserController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/User.cs">
     <Files>
-      <File FileName="Db/ApplicationDbContext.cs" Line="39" Column="48" />
-      <File FileName="GlobalUsing.cs" Line="16" Column="25" />
+      <File FileName="Db/ApplicationDbContext.cs" Line="1" Column="1" />
+      <File FileName="GlobalUsing.cs" Line="1" Column="1" />
       <File FileName="Controllers/UserController.cs" Line="32" Column="30" />
-      <File FileName="Repositories/UserRepository.cs" Line="14" Column="67" />
-      <File FileName="Repositories/IUserRepository.cs" Line="5" Column="43" />
-      <File FileName="Models/User.cs" Line="25" Column="59" />
-      <File FileName="Profiles/UserLoginProfile.cs" Line="15" Column="7" />
+      <File FileName="Repositories/UserRepository.cs" />
+      <File FileName="Repositories/IUserRepository.cs" />
+      <File FileName="Models/User.cs" Line="1" Column="1" />
+      <File FileName="Profiles/UserLoginProfile.cs" />
+      <File FileName="Migrations/ApplicationDbContextModelSnapshot.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="printing_om_and_pm_system_app">
             <Node name="printing_om_and_pm_system_app">
-              <Node name="Controllers" expanded="True">
-                <Node name="UserController.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Db" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="User.cs" selected="True" />
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
@@ -26,10 +34,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.printing__om__and__pm__system__app PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
 </Properties>
