@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace printing_om_and_pm_system_app.DTO.Incoming
+﻿namespace printing_om_and_pm_system_app.DTO.Incoming
 {
 	public class UserLoginDto
 	{

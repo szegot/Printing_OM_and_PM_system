@@ -14,3 +14,4 @@ global using printing_om_and_pm_system_app.Db;
 global using printing_om_and_pm_system_app.DTO.Incoming;
 global using printing_om_and_pm_system_app.DTO.Outgoing;
 global using AutoMapper;
+global using System.Text.Json.Serialization;

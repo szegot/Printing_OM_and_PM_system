@@ -1,5 +1,12 @@
 ﻿namespace printing_om_and_pm_system_app.Models
 {
+    public enum UserRoles
+    {
+        Admin,
+        Staff,
+        Customer
+    }
+
     public class User
     {
         [Key]
@@ -11,11 +18,11 @@
 
         [Required(ErrorMessage = "First name is required.")]
         [StringLength(maximumLength: 50, MinimumLength = 1)]
-        public string First_Name { get; set; } = string.Empty;
+        public string FirstName { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Last name is required.")]
         [StringLength(maximumLength: 50, MinimumLength = 1)]
-        public string Last_Name { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Email is required.")]
         [StringLength(maximumLength: 255, MinimumLength = 1)]
@@ -25,16 +32,16 @@
         [StringLength(maximumLength: 64, MinimumLength = 8)]
         public string Password { get; set; } = string.Empty;
 
-        [MaxLength(255)]
-        public string Billing_Address { get; set; } = string.Empty;
+        [StringLength(maximumLength: 255, MinimumLength = 1)]
+        public string BillingAddress { get; set; } = string.Empty;
 
-        [MaxLength(255)]
-        public string Billing_City { get; set; } = string.Empty;
+        [StringLength(maximumLength: 255, MinimumLength = 1)]
+        public string BillingCity { get; set; } = string.Empty;
 
-        [MaxLength(20)]
-        public int Billing_Zipcode { get; set; }
+        [MaxLength(4)]
+        public int BillingZipCode { get; set; }
 
-        public bool IsAdmin { get; set; } = false;
+        public UserRoles Roles { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
     }

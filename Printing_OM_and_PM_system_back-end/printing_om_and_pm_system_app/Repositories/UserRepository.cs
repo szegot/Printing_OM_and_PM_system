@@ -9,10 +9,28 @@ namespace printing_om_and_pm_system_app.Repositories
 		{
 			_appDb = context;
 		}
+
 		public Task<User> GetUserByEmail(string email)
 		{
 			return _appDb.Users.FirstOrDefaultAsync(u => u.Email == email);
 		}
-	}
+
+		public void AddUser(User user)
+		{
+			_appDb.Users.Add(user);
+		}
+		public Task SaveAsync()
+		{
+			return _appDb.SaveChangesAsync();
+		}
+		public bool UsernameExists(string username)
+		{
+			return _appDb.Users.Any(u => u.UserName == username);
+		}
+        public bool EmailExists(string email)
+        {
+            return _appDb.Users.Any(u => u.Email == email);
+        }
+    }
 }
 

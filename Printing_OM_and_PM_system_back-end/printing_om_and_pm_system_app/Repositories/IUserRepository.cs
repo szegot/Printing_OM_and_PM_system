@@ -3,6 +3,10 @@
 	public interface IUserRepository
 	{
 		Task<User> GetUserByEmail(string email);
+		void AddUser(User user);
+		Task SaveAsync();
+		bool UsernameExists(string username);
+		bool EmailExists(string email);
 	}
 }
 
