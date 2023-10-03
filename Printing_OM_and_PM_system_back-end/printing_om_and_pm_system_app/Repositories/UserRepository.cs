@@ -4,33 +4,37 @@ namespace printing_om_and_pm_system_app.Repositories
 {
 	public class UserRepository : IUserRepository
 	{
-		private readonly ApplicationDbContext _appDb;
-		public UserRepository(ApplicationDbContext context)
+		private readonly ApplicationDbContext _userContext;
+		public UserRepository(ApplicationDbContext userContext)
 		{
-			_appDb = context;
+			_userContext = userContext;
 		}
 
 		public Task<User> GetUserByEmail(string email)
 		{
-			return _appDb.Users.FirstOrDefaultAsync(u => u.Email == email);
+			return _userContext.Users.FirstOrDefaultAsync(u => u.Email == email);
 		}
 
 		public void AddUser(User user)
 		{
-			_appDb.Users.Add(user);
+			_userContext.Users.Add(user);
 		}
 		public Task SaveAsync()
 		{
-			return _appDb.SaveChangesAsync();
+			return _userContext.SaveChangesAsync();
 		}
 		public bool UsernameExists(string username)
 		{
-			return _appDb.Users.Any(u => u.UserName == username);
+			return _userContext.Users.Any(u => u.UserName == username);
 		}
         public bool EmailExists(string email)
         {
-            return _appDb.Users.Any(u => u.Email == email);
+            return _userContext.Users.Any(u => u.Email == email);
         }
+		public Task<List<User>> GetAll()
+		{
+			return _userContext.Users.ToListAsync();
+		}
     }
 }
 

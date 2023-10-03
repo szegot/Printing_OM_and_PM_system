@@ -1,6 +1,6 @@
 ﻿namespace printing_om_and_pm_system_app.DTO.Incoming
 {
-	public class UserLoginDto
+	public class UserLoginDTO
 	{
 		[JsonPropertyName("email")]
 		[StringLength(maximumLength: 255, MinimumLength = 3)]

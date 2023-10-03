@@ -4,7 +4,7 @@
 	{
 		public UserLoginProfile()
 		{
-			CreateMap<UserLoginDto, User>()
+			CreateMap<UserLoginDTO, User>()
 				.ForMember(
 					dest => dest.Email,
 					opt => opt.MapFrom(src => src.Email)

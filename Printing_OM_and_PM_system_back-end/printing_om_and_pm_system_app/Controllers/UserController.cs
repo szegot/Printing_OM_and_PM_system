@@ -11,18 +11,21 @@ namespace printing_om_and_pm_system_app.Controllers
 		private readonly IUserRepository _userRepo;
 		private readonly IMapper _mapper;
 		private readonly IConfiguration _configuration;
+		private readonly IUserService _userService;
 
-		public UserController(IUserRepository userRepo, IMapper mapper, IConfiguration configuration)
+		public UserController(IUserRepository userRepo, IMapper mapper, IConfiguration configuration, IUserService userService)
 		{
 			_userRepo = userRepo;
 			_mapper = mapper;
 			_configuration = configuration;
+			_userService = userService;
 		}
 
+		// LOGIN
 		[HttpGet("login"), AllowAnonymous]
 		[ProducesResponseType(StatusCodes.Status200OK)]
 		[ProducesResponseType(StatusCodes.Status401Unauthorized)]
-		public async Task<ActionResult<string>> Login(UserLoginDto userLogin)
+		public async Task<ActionResult<string>> Login(UserLoginDTO userLogin)
 		{
 			var user = _mapper.Map<User>(userLogin);
 			var userFromDatabase = await _userRepo.GetUserByEmail(user.Email);
@@ -34,6 +37,7 @@ namespace printing_om_and_pm_system_app.Controllers
 			return Ok("Succesful login");
 		}
 
+		// REGISTRATION
         [HttpPost("registration"), AllowAnonymous]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -56,7 +60,7 @@ namespace printing_om_and_pm_system_app.Controllers
 				return BadRequest("Error: Password must be at least 8 charachters long.");
 			}
 			// Validate e-mail address
-			if (!RegexEmailCheck(user.Email))
+			if (!_userService.RegexEmailCheck(user.Email))
 			{
 				return Conflict("Error: E-mail address already in use.");
 			}
@@ -84,15 +88,20 @@ namespace printing_om_and_pm_system_app.Controllers
 			{
 				return Problem(ex.Message);
 			}
-
-
         }
 
-        static bool RegexEmailCheck(string input)
-        {
-            return Regex.IsMatch(input, @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
-        }
+		// ALL USERS
+		[HttpGet("get-all-user"), AllowAnonymous]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+		public async Task<ActionResult<IEnumerable<UserDTO>>> GetAllUsers()
+		{
+			var users = await _userRepo.GetAll();
 
+			var userDtoList = _mapper.Map<IEnumerable<UserDTO>>(users);
+
+			return Ok(userDtoList);
+		}
     }
 }
 
