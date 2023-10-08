@@ -8,5 +8,7 @@
 		bool UsernameExists(string username);
 		bool EmailExists(string email);
 		Task<List<User>> GetAll();
+		Task<User?> GetUserById(int id);
+		void DeleteUser(User user);
     }
 }

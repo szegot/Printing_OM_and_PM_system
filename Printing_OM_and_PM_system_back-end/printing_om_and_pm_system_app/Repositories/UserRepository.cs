@@ -35,6 +35,14 @@ namespace printing_om_and_pm_system_app.Repositories
 		{
 			return _userContext.Users.ToListAsync();
 		}
+		public Task<User?> GetUserById(int id)
+		{
+			return _userContext.Users.FirstOrDefaultAsync(u => u.User_ID == id);
+		}
+		public void DeleteUser(User user)
+		{
+			_userContext.Users.Remove(user);
+		}
     }
 }
 

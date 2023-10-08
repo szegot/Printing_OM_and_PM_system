@@ -41,7 +41,25 @@
         [MaxLength(4)]
         public int BillingZipCode { get; set; }
 
-        public UserRoles Roles { get; set; }
+        private UserRoles _roles;
+
+        public UserRoles Roles
+        {
+            get { return _roles; }
+            private set { _roles = value; }
+        }
+
+        // Constructor
+        public User()
+        {
+            Roles = UserRoles.Customer;
+        }
+
+        // Method to set Roles
+        public void SetUserRole(UserRoles role)
+        {
+            Roles = role;
+        }
 
         public virtual ICollection<Order> Orders { get; set; }
     }

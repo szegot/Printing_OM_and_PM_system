@@ -1,8 +1,9 @@
-﻿namespace printing_om_and_pm_system_app.Profiles
+﻿using System;
+namespace printing_om_and_pm_system_app.Profiles
 {
-	public class UserRegistrationProfile : Profile
+	public class UserUpdateProfile : Profile
 	{
-		public UserRegistrationProfile()
+		public UserUpdateProfile()
 		{
             CreateMap<UserRegistrationDTO, User>()
                 .ForMember(
